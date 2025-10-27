@@ -1,6 +1,6 @@
 const form = document.getElementById("studentForm");
 const list = document.getElementById("studentList");
-const baseUrl = "http://localhost:9090/api/students/select";
+const baseUrl = "http://localhost:9090/api/students";
 
 form.addEventListener("submit", async (e) => {
   e.preventDefault();

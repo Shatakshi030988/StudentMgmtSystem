@@ -15,7 +15,7 @@ public class StudentController {
     @Autowired
     private StudentRepository repo;
 
-    @GetMapping("/select")
+    @GetMapping
     public List<Student> getAll() {
         return repo.findAll();
     }

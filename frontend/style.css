@@ -1,9 +1,97 @@
+/* General page styling */
 body {
-  font-family: Arial;
-  margin: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
 }
 
-input, button {
-  margin: 5px;
-  padding: 8px;
+/* Main heading */
+h1 {
+  color: #0d47a1;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 2.2em;
+  letter-spacing: 1px;
+}
+
+/* Student Form */
+form {
+  background: #ffffff;
+  padding: 25px 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Input fields */
+input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #90caf9;
+  border-radius: 8px;
+  font-size: 1em;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #1976d2;
+  box-shadow: 0 0 6px rgba(25, 118, 210, 0.3);
+}
+
+/* Add Student Button */
+button {
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 10px;
+  width: 100%;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #0d47a1;
+  transform: translateY(-2px);
+}
+
+/* Student list section */
+h2 {
+  margin-top: 40px;
+  color: #0d47a1;
+}
+
+ul#studentList {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+  width: 320px;
+}
+
+/* Each student item */
+ul#studentList li {
+  background-color: #ffffff;
+  border: 1px solid #bbdefb;
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+ul#studentList li:hover {
+  transform: scale(1.02);
 }
